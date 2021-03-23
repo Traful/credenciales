@@ -2,7 +2,7 @@
 
 ## ReactJS
 
-Se utiliza para este software la librería ReacJS.
+Se utiliza para este software la librería [Reac](https://reactjs.org/) (hook).
 
 ## Utilidad
 
@@ -14,3 +14,6 @@ El software solo se limita a la generación, en correctas proporciones, de un pd
 
 En nuestro caso utilizamos un dispositivo con caraterísticas especiales para tal fin, [Evolis Primacy](https://identificarsrl.com/detalle-producto/530/impresora-evolis-primacy-single-side?campaign=10111737031&content=436943306368&keyword=%2Bevolis%20primacy&gclid=Cj0KCQjwo-aCBhC-ARIsAAkNQiu35YRIZ5XGlBFUwcpsQ3Pr1yzxVX3BhBgwJnugezk8F0lhW4b4rrsaApeBEALw_wcB).
 
+## Notas
+
+Este proyecto es solo el font-end, utiliza en conjunto una [Api-Rest](https://github.com/Traful/api-credenciales) desarrollada en PHP ([Slim V3](https://www.slimframework.com/)) y una base de datos relacional (MySQL)
