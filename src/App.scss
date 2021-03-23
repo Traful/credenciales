@@ -1,0 +1,94 @@
+.Editor {
+	.formulario {
+		.foto {
+			grid-area: foto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 1em;
+			.marco {
+				border: 1px solid #ccc;
+				width: 165px;
+				height: 165px;
+				cursor: pointer;
+				canvas {
+					border: 1px solid #000;
+					width: 165px;
+					height: 165px;
+					//display: none;
+				}
+			}
+		}
+		.cuerpo-1 {
+			grid-area: cuerpo-1;
+		}
+		.cuerpo-2 {
+			grid-area: cuerpo-2;
+		}
+		display: grid;
+		grid-template-columns: 300px auto;
+		grid-template-areas: "foto cuerpo-1" "cuerpo-2 cuerpo-2";
+		grid-template-rows: auto;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.Editor {
+		.formulario {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+}
+
+.Foto {
+	display: flex;
+	justify-content: center;
+	.video-content {
+		position: relative;
+		width: 440px;
+		height: 280px;
+		video {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 440px;
+			height: 280px;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			left: calc((440px / 2) - (165px / 2));
+			top: calc((280px / 2) - (165px / 2));
+			width: 165px;
+			height: 165px;
+			display: block;
+			border: 2px solid #1331db;
+			z-index: 999;
+		}
+	}
+}
+
+.dummy-canvas {
+	display: none;
+	width: 165px;
+	height: 165px;
+	//border: 1px solid #000;
+}
+
+.CredencialPDF {
+	margin-top: 2em;
+	width: 100%;
+	min-height: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.pdf {
+	width: 100%;
+	min-height: 600px;
+	display: flex;
+	justify-content: center;
+}
